@@ -2,15 +2,19 @@
 
 **Course / Module:** Unit 4: DHCP Configuration & Network Setup  
 **Subject:** Network Protocols and Communication (NPC)  
-**Author:** Sarthak Sunil Thorat  
-**PRN:** 2125UCSM1105  
+**Student Name:** **Vishal Katyare**  
+**PRN:** **2125UCSM1034**  
+**Department:** Computer Science Engineering (Cyber Security)  
+**Institution:** Sanjivani University, Kopargaon  
+**Academic Year:** 2026–2027  
 **Software:** Cisco Packet Tracer 9.0.1  
-**Repository:** [Unit-4](https://github.com/sarthak833/Unit-4)  
+**Repository:** [unit-4-npc](https://github.com/vishal937/unit-4-npc.git)  
+**Submission Report:** [NPC_Unit4_DHCP_Assignment_Report.pdf](NPC_Unit4_DHCP_Assignment_Report.pdf)  
 
 ---
 
 ## 1. Aim
-To design and configure a Local Area Network (LAN) in Cisco Packet Tracer, configure a central server with a static IPv4 address, enable and configure the DHCP service, dynamically assign IP configurations to client PCs, and verify end-to-end network connectivity using the ICMP ping command.
+To design and configure a Local Area Network (LAN) in Cisco Packet Tracer, configure a central server with a static IPv4 address, enable and configure the Dynamic Host Configuration Protocol (DHCP) service, dynamically assign IP configurations to client PCs, and verify end-to-end network connectivity using the ICMP ping command.
 
 ---
 
@@ -24,7 +28,7 @@ To design and configure a Local Area Network (LAN) in Cisco Packet Tracer, confi
 ---
 
 ## 3. Network Topology
-The network consists of a central Cisco 2960 switch connecting three client PCs and a dedicated DHCP server:
+The network consists of a central Cisco Catalyst 2960 switch connecting three client PCs and a dedicated DHCP server:
 
 ```text
                +-----------------------------+
@@ -99,15 +103,15 @@ DHCP service enabled with `NPC_POOL` parameters:
 ![Figure 3: DHCP Service Settings](./screenshots/Figure_3_DHCP_Service_Settings.png)
 
 ### Figure 4: PC0 Dynamic IP Configuration
-Successful DHCP request on PC0:
+Successful DHCP request on PC0 (leased `192.168.1.10`):
 ![Figure 4: PC0 DHCP](./screenshots/Figure_4_PC0_DHCP_Config.png)
 
 ### Figure 5: PC1 Dynamic IP Configuration
-Successful DHCP request on PC1:
+Successful DHCP request on PC1 (leased `192.168.1.11`):
 ![Figure 5: PC1 DHCP](./screenshots/Figure_5_PC1_DHCP_Config.png)
 
 ### Figure 6: PC2 Dynamic IP Configuration
-Successful DHCP request on PC2:
+Successful DHCP request on PC2 (leased `192.168.1.12`):
 ![Figure 6: PC2 DHCP](./screenshots/Figure_6_PC2_DHCP_Config.png)
 
 ### Figure 7: ICMP Ping Connectivity Test
@@ -120,23 +124,23 @@ Successful ping responses from PC0 to Server0, PC1, and PC2 (0% packet loss):
 - **DHCP Operation:** Dynamic host configuration protocol successfully leased valid IP parameters across all 3 end devices on the subnet.
 - **ICMP Ping Results:**
   - `PC0` -> `Server0 (192.168.1.2)`: 4/4 packets received, 0% loss (Average < 1ms)
-  - `PC0` -> `PC1 (192.168.1.3)`: 4/4 packets received, 0% loss (Average < 1ms)
-  - `PC0` -> `PC2 (192.168.1.4)`: 4/4 packets received, 0% loss (Average < 1ms)
+  - `PC0` -> `PC1 (192.168.1.11)`: 4/4 packets received, 0% loss (Average < 1ms)
+  - `PC0` -> `PC2 (192.168.1.12)`: 4/4 packets received, 0% loss (Average < 1ms)
 
 ---
 
 ## 8. Files in Repository
 - `NPC_Unit4_DHCP_Assignment.pkt`: Cisco Packet Tracer simulation project file.
-- `NPC_Unit4_DHCP_Assignment_Report.pdf`: Complete assignment report in PDF format.
-- `NPC_Unit4_DHCP_Assignment_Report.docx`: Editable assignment report in Word format.
+- `NPC_Unit4_DHCP_Assignment_Report.pdf`: Complete academic assignment report in PDF format.
+- `generate_pdf.py`: Python ReportLab script used to compile the PDF report.
 - `screenshots/`: Folder containing all high-resolution configuration & testing screenshots (Figures 1 to 7).
 - `README.md`: Comprehensive project overview and documentation.
 
 ---
 
 ## 9. GitHub Repository
-- **Repository URL:** [https://github.com/sarthak833/Unit-4](https://github.com/sarthak833/Unit-4)
+- **Repository URL:** [https://github.com/vishal937/unit-4-npc.git](https://github.com/vishal937/unit-4-npc.git)
 - **Clone Command:**
   ```bash
-  git clone https://github.com/sarthak833/Unit-4.git
+  git clone https://github.com/vishal937/unit-4-npc.git
   ```
